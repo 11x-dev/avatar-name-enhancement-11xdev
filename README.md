@@ -7,13 +7,13 @@ Getting setup locally only takes a few minutes!
 1. Clone the repo
 
 ```
-git clone https://github.com/ScriabinOp8No12/avatar-name-11xdev.git
+git clone https://github.com/ScriabinOp8No12/avatar-name-enhancement-11xdev.git
 ```
 
 2. Navigate to the root of the project:
 
 ```
-cd avatar-name-11xdev
+cd avatar-name-enhancement-11xdev
 ```
 
 3. Install packages and start the frontend server:
@@ -32,7 +32,7 @@ http://localhost:18888/
 ***Estimated Time***
 ************************
 
-Estimated time for this challenge is 1 - 3 hours.
+Estimated time for this enhancement is 1 - 3 hours.
 
 ************************
 ***Hints and Solution***

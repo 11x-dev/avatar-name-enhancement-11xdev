@@ -17,11 +17,11 @@ Alternatively, you can also navigate to the following github branches in your br
 For a hint, scroll down to the README portion of this page:
 
 ```
-https://github.com/ScriabinOp8No12/avatar-name-11xdev/tree/hint
+https://github.com/ScriabinOp8No12/avatar-name-enhancement-11xdev/tree/hint
 ```
 
 For a solution, scroll down to the README portion of this page:
 
 ```
-https://github.com/ScriabinOp8No12/avatar-name-11xdev/tree/solution
+https://github.com/ScriabinOp8No12/avatar-name-enhancement-11xdev/tree/solution
 ```
