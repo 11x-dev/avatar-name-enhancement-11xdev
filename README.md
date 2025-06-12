@@ -57,6 +57,7 @@ You've been asked to automatically adjust the user's avatar name whenever they s
 3. There are no side effects:
 
 a) The avatar name should NOT rapidly change before settling on the final name (you may need to try a few times to get this issue)
+
 b) Clicking the "Change Name" button still properly changes the avatar name
 
 ![Character selection page screenshot](https://res.cloudinary.com/dxq77puhi/image/upload/v1749704526/Annotated_avatar_name_screenshot_11xdev_6_11_2025_fpgape.png)
@@ -67,7 +68,7 @@ b) Clicking the "Change Name" button still properly changes the avatar name
 
 The code you'll want to modify is in: src/views/CharacterSelection/CharacterSelection.tsx
 
-On the frontend, you'll want to navigate to this page: http://localhost:18888/character-selection
+In your browser, you'll want to navigate to this page: http://localhost:18888/character-selection
 
 This was a real bug from a real production codebase!  Feel free to use any resources you want on this coding challenge, have fun!  
 
