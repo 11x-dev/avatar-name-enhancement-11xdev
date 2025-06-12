@@ -66,9 +66,13 @@ b) Clicking the "Change Name" button still properly changes the avatar name
 **Relevant Code and Information**
 ************************
 
-The code you'll want to modify is in: src/views/CharacterSelection/CharacterSelection.tsx
+The file you'll want to modify is: src/views/CharacterSelection/CharacterSelection.tsx
 
-In your browser, you'll want to navigate to this page: http://localhost:18888/character-selection
+You may need to import code into this file, but all of your changes should be in this single file
+
+In your browser, you'll want to navigate to this page to test your changes: http://localhost:18888/character-selection
+
+If you are unsure how the implemented enhancement should work, navigate to https://kidsgoserver.com/character-selection
 
 This was a real bug from a real production codebase!  Feel free to use any resources you want on this coding challenge, have fun!  
 
