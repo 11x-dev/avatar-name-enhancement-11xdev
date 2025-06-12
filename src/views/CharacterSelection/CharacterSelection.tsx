@@ -40,7 +40,6 @@ export function CharacterSelection(): JSX.Element {
     const [race, idx] = uiClassToRaceIdx(user.ui_class);
     const [avatarRace, setAvatarRace] = React.useState<Race>(race);
     const [avatarIdx, setAvatarIdx] = React.useState(idx);
-    const [regeneratingUsername, setRegeneratingUsername] = React.useState(false);
 
     const last_ui_class = React.useRef<string>(raceIdxToUiClass(race, idx));
     const previousRace = React.useRef<Race>(race);
@@ -57,8 +56,6 @@ export function CharacterSelection(): JSX.Element {
         const config = data.get("cached.config");
         const ui_class = config?.user?.ui_class;
 
-        setRegeneratingUsername(true);
-
         try {
             const newConfig = await post("kidsgo/regenerate_username", {
                 ui_class,
@@ -66,8 +63,6 @@ export function CharacterSelection(): JSX.Element {
             syncUserData(newConfig);
         } catch (err) {
             console.error("Failed to regenerate name", err);
-        } finally {
-            setRegeneratingUsername(false);
         }
     };
 
@@ -89,7 +84,6 @@ export function CharacterSelection(): JSX.Element {
             await post("kidsgo/update_avatar", { ui_class: new_ui_class });
 
             if (raceChanged) {
-                setRegeneratingUsername(true);
                 try {
                     const newConfig = await post("kidsgo/regenerate_username", {
                         ui_class: new_ui_class,
@@ -97,8 +91,6 @@ export function CharacterSelection(): JSX.Element {
                     syncUserData(newConfig);
                 } catch (err) {
                     console.error("Failed to regenerate name", err);
-                } finally {
-                    setRegeneratingUsername(false);
                 }
                 // Necessary otherwise if we refresh the page after changing the alien index by using the left/right arrows, we lose the avatar we were on
             } else {
