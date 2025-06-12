@@ -32,7 +32,7 @@ http://localhost:18888/
 ***Estimated Time***
 ************************
 
-Estimated time for this enhancement is 1 - 3 hours.
+Estimated time for this enhancement is 1 - 5 hours.
 
 ************************
 ***Hints and Solution***
