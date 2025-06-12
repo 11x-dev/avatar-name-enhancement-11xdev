@@ -1,78 +1,17 @@
 *******************
-***Initial Setup***
+***Solution***
 *******************
 
-Getting setup locally only takes a few minutes!
+You can view the exact code changes needed to solve this coding challenge here: https://github.com/ScriabinOp8No12/avatar-name-enhancement-11xdev/pull/1/files#diff-b2d4e7413aed9dc28d0b0bff2da03c27287e6a913f633d142273f17379227410
 
-1. Clone the repo
+This branch contains the avatar name enhancement - you can test that the functionality works as intended in your browser.   
 
-```
-git clone https://github.com/ScriabinOp8No12/avatar-name-enhancement-11xdev.git
-```
+1. Move the refresh function from the child component NameSelection up to parent component CharacterSelection.  Rename it to regenerateUsername for clarity, then pass it down as a prop to the child component NameSelection. We also want to combine separate update functions into a single handleRaceChange async function.  This function detects when the race changes (not the race idx) so we can update the avatar name. These adjustments make it less likely we run into state synchronization bugs, and makes reading and maintaining the code easier. 
 
-2. Navigate to the root of the project:
+2. Make a helper function mimicking original data store logic so that the local data stores stay synchronized.  We can verify this works by refreshing the page after changing avatar types and/or indexes.  If you don't have these blocks of code, refreshing the page will lose the avatar changes.  
 
-```
-cd avatar-name-enhancement-11xdev
-```
+*******************
+***Conclusion***
+*******************
 
-3. Install packages and start the frontend server:
-
-```
-yarn install && npm run dev
-```
-
-4. View the website in your browser
-
-```
-http://localhost:18888/
-```
-
-************************
-***Estimated Time***
-************************
-
-Estimated time for this enhancement is 1 - 3 hours.
-
-************************
-***Hints and Solution***
-************************
-
-If you need a hint or want to see a possible solution, navigate to this document [here](/Hints-And-Solution.md)
-
-************************
-***Coding Challenge***
-************************
-
-The real codebase uses a submodule that is located at online-go.com, which includes another submodule at online-go.com/submodules/goban. To ensure nothing breaks when those submodules are updated, the code has been manually added. The main online-go.com submodule can be found at https://github.com/online-go/online-go.com
-
-You've been asked to automatically adjust the user's avatar name whenever they select a different alien/planet type, but not when they select a different variant of the same alien.  The backend request to change the avatar name is already completed for you.  You do not have access to any backend code.  
-
-**********************
-**Requirements**
-**********************
-
-1. Clicking a different alien (which changes the background planet) also updates the user's avatar name
-2. Clicking the left and right arrows to adjust variations of the alien do NOT change the avatar name
-3. There are no side effects:
-
-a) The avatar name should NOT rapidly change before settling on the final name (you may need to try a few times to get this issue)
-
-b) Clicking the "Change Name" button still properly changes the avatar name
-
-![Character selection page screenshot](https://res.cloudinary.com/dxq77puhi/image/upload/v1749704526/Annotated_avatar_name_screenshot_11xdev_6_11_2025_fpgape.png)
-
-************************
-**Relevant Code and Information**
-************************
-
-The file you'll want to modify is: src/views/CharacterSelection/CharacterSelection.tsx
-
-You may need to import code into this file, but all of your changes should be in this single file
-
-In your browser, you'll want to navigate to this page to test your changes: http://localhost:18888/character-selection
-
-If you are unsure how the implemented enhancement should work, navigate to https://kidsgoserver.com/character-selection
-
-This was a real bug from a real production codebase!  Feel free to use any resources you want on this coding challenge, have fun!  
-
+Combining related functions and centralizing coordinated logic in parent components can often reduce the likelihood of state synchronization bugs and also make the code more readable and maintainable!
