@@ -56,9 +56,11 @@ You've been asked to automatically adjust the user's avatar name whenever they s
 2. Clicking the left and right arrows to adjust variations of the alien do NOT change the avatar name
 3. There are no side effects:
 
-a) The avatar name should NOT rapidly change before settling on the final name (you may need to try a few times to get this issue)
+a) The avatar name should NOT rapidly change before settling on the final name
 
 b) Clicking the "Change Name" button still properly changes the avatar name
+
+c) Refreshing the browser page keeps the last selected avatar name and character
 
 ![Character selection page screenshot](https://res.cloudinary.com/dxq77puhi/image/upload/v1749704526/Annotated_avatar_name_screenshot_11xdev_6_11_2025_fpgape.png)
 
