@@ -4,7 +4,7 @@
 
 Getting setup locally only takes a few minutes!
 
-1. Open a terminal and clone the repo
+1. Open a terminal and clone the repo:
 
 ```
 git clone https://github.com/ScriabinOp8No12/avatar-name-enhancement-11xdev.git
@@ -16,7 +16,7 @@ git clone https://github.com/ScriabinOp8No12/avatar-name-enhancement-11xdev.git
 cd avatar-name-enhancement-11xdev
 ```
 
-3. Open the project in your IDE, then return to your original terminal for step 4.
+3. Open the project in your IDE, then return to your original terminal for step 4:
 
 ```
 code .
@@ -28,7 +28,7 @@ code .
 yarn install && npm run dev
 ```
 
-5. View the website in your browser
+5. View the website in your browser:
 
 ```
 http://localhost:18888/
