@@ -18,6 +18,10 @@ cd avatar-name-enhancement-11xdev
 
 3. Open the project in your IDE, then return to this terminal for step 4.
 
+```
+code .
+```
+
 4. Install packages and start the frontend server:
 
 ```
