@@ -1,5 +1,5 @@
 *******************
-***Hint***
+**Hint**
 *******************
 
 Try combining your server calls and state updates into a single function instead of splitting them apart.
