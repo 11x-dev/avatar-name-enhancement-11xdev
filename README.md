@@ -92,5 +92,5 @@ If you are unsure how the implemented enhancement should work, navigate to:
 https://kidsgoserver.com/character-selection
 ```
 
-This was a real bug from a real production codebase!  Feel free to use any resources you want on this coding challenge, have fun!  
+This was a real enhancement made on a real production codebase!  Feel free to use any resources you want on this coding challenge, have fun!  
 
