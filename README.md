@@ -7,13 +7,13 @@ Getting setup locally only takes a few minutes!
 1. Open a terminal and clone the repo:
 
 ```
-git clone https://github.com/ScriabinOp8No12/avatar-name-enhancement-11xdev.git
+git clone https://github.com/ScriabinOp8No12/avatar-name-enhancement.git
 ```
 
 2. Navigate to the root of the project:
 
 ```
-cd avatar-name-enhancement-11xdev
+cd avatar-name-enhancement
 ```
 
 3. Open the project in your IDE, then return to your original terminal for step 4:
